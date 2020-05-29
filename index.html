@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mike's Website</title>
+</head>
+<h1><strong>Mike's Website & GitHub Notes</strong></h1>
+
+<body>
+
+
+    <a href="https://github.com/mgweber25">Various Repositories on GitHub</a>
+
+    <br>
+    <a>Common Git Bash Cmds</a><br>
+
+    <ol style="list-style-type:upper-roman" , margin=15px>
+
+        <li> Adding, removing, tracking, ignoring files:</li>
+        <ol.a style="list-style-type:lower-alpha" , margin=30px>
+            <li>git add . ~adds all changes within directory to staging</li>
+            <li>git add (file_name) ~adds file to staging</li>
+            <li>git rm (file_name) ~removes file and stops tracking it</li>
+            <li>git rm --cached (file_name) ~stops tracking file</li>
+            <li>git status ~displays changes to files w/in directory </li>
+    </ol>
+
+    <li>Declaring Git Commits:</li>
+    <ol.b>
+        <li>git commit -m "(message)" ~commit changes with a message</li>
+        <li>git commit -am "(message)" ~commit and add all changes to staging</li>>
+        <li>git log ~displays a history of changes</li>
+    </ol.b>
+
+    <li>Tagging and Pushing Cmds:
+        <ol.c>
+            <li> git tag (tag_name) ~defines a tag to files</li>
+            <li> git push ~update GitHub repo with commits for all existing branches common on the local system and GitHub. Branches and or files on the local system that are new or have not been pushed to the server are not shared</li>
+            <li> git push -all ~push all local branches to GitHub</li>
+            <li> git push (https://remoteURL) (BranchName) ~updates GitHub with all commits for specific branch named</li>></ol.c>
+
+        <li>Branch Cmds:
+            <ol.d>
+                <li> git branch ~displays list of all branches</li>
+                <li>git checkout -b (new_branchname) ~Make new branch and switch to it</li>
+                <li> git branch -d (branchname) ~delete branch</li>
+                <li> git merge (branchname) ~merge a different branch with active branch</li>
+            </ol.d>
+
+            <li>Fetching & Merging:
+                <ol.e>
+                    <li>git fetch (https://remoteURL) ~retrieve any commits from GitHub that do not exist locally</li>
+                    <li>git merge (https://remoteURL)/BranchName) ~merge remote branch into current working branch</li>
+                    *Using fetch before merge allows you to pull files from repo and examine them to resolve conflicts prior to merge. </li>
+            </ol.e>
+            </ol>
+
+            <p>Definitions:</p>
+            <ul>
+                <li>- Upstream: location of original code (local files)</li>
+                <li>Origin: location of repo (GitHub/remote server to fetch/pull from & push to) </li>
+            </ul>
+</body>
+
+</html>
